@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.home-section{
+  padding-bottom: 80px;
+}
+.main-container {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page {
+  display: grid;   
+  grid-template-columns: 1fr 1fr;   
+  grid-gap: 90px;   
+  padding: 0px 60px;
+  overflow: hidden; 
+}
+.home-page-bottom{
+  display: grid;   
+  grid-template-columns: 1fr;   
+  grid-gap: 90px;   
+  padding: 0px 60px;
+  overflow: hidden; 
+  margin-top: 40px;
+  word-break: break-all;
+  
+}
+.assist{
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+ text-align:left;
+ width: 900px;
+ line-height: 30px;
+word-spacing: 2px;
+ 
+
+ 
+}
+.navbar{
+  padding: 10px 0px;
+  background-color: white;
+}
+body {
+  background-image: url("./assets/majorbackground.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps background fixed */
+  margin: 0;
+}
+.home-page-main{
+  margin-top: 60px;
+  border-radius: 6px;
+  padding-bottom: 40px;
+}
+.headings{
+  padding: 40px 10px;
+  padding-bottom: 0px;
+}
+.startform{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+  border-radius: 6px;
+  padding-bottom: 0px;
+  width: 100%;
+  align-items: flex-start;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: #333333;
+}
+.startform-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  color: #000000;
+}
+.title-underline{
+  border: none; /* Removes the default border style */
+  height: 3px;  /* Sets the thickness of the line */
+  background-color: #000000; /* Sets the color of the line */
+  margin: 20px 0; /* Adds space above and below the line */
+}
+.startform-inputs{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:  20px;
+  width: 100%;
+}
+.startform-inputs-select, .startform-inputs-input{
+  padding: 15px 0px;
+  width: 70%;
+  outline: none;
+  border: 1.5px solid #333333;
+}
+.button-container{
+  display: flex;
+  /* padding-bottom: 40px; */
+  margin-top: 0px;
+  padding: 10px 30px;
+}
+.general-continue-button{
+background-color: #273B80;
+margin-top: 20px;
+font-weight: 700;
+font-size: 16px;
+outline: none;
+border: none;
+padding: 10px 15px;
+color: white;
+cursor: pointer;
+}
+
+.phone-number {
+  text-decoration: underline;
+}
+.get-a-loan{
+  font-family: "DM Sans", sans-serif;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 30px
+}
+@media (max-width: 768px) {
+  .home-page {
+    grid-template-columns: 1fr; /* Stacks the content in one column on smaller screens */
+    padding: 0px 20px;
+  }
+  .startform-title{
+    white-space: nowrap;
+    font-size: 30px;
+  }
+  .startform{
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: "DM Sans", sans-serif;
+  }
+  .general-continue-button{
+    margin-top: 0px;
+  }
+  .startform-inputs{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:  20px;
+  }
+  .startform-inputs-select, .startform-inputs-input{
+    /* padding: 15px 0px; */
+    width: 100%;
+    outline: none;
+  }
+  .home-page-bottom{
+    display: none;
+  }
+}
