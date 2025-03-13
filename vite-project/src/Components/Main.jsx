@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import StartForm from './Forms/StartForm'
 import GetALoan from './Forms/GetALoan'
+import PaymentPlan from './Forms/PaymentPlan'
 const Main = () => {
     const [display, setDisplay] = useState({
         desktopOne : true,
@@ -40,7 +41,7 @@ const Main = () => {
         </div>
 {display.desktopOne && <StartForm />}
 {display.desktopTwo && <GetALoan />}
-{display.desktopThree && <h1>Goat</h1>}
+{display.desktopThree && <PaymentPlan />}
 <div className='button-container'>
 <button className='general-continue-button' onClick={() => { changeContent()}}>
       Continue
