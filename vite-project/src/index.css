@@ -137,7 +137,15 @@ cursor: pointer;
 }
 .get-a-loan{
   font-family: "DM Sans", sans-serif;
-  padding: 20px 60px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap : 30px
+}
+.payment-plan{
+  font-family: "DM Sans", sans-serif;
+  padding: 20px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
