@@ -9,25 +9,27 @@ justifyContent : "space-between",
 gap : "100px",
 }}>
 <section
-style={ {display : "flex", flexDirection : "row", justifyContent : "space-between", width : "100%"}}>
+style={ {display : "flex", flexDirection : "row", justifyContent : "space-between", width : "100%"}}
+className='loan-options-container'
+>
     <div className='loan-options'>
-<span style={{fontSize : "16px"}}>Loan Amount</span>
+<span  className='loan-titles'>Loan Amount</span>
 <span className='loan-specifics'>N150,000</span>
     </div>
     <div  className='loan-options'>
-    <span style={{fontSize : "16px"}} > Repayment Date</span>
+    <span  className='loan-titles' > Repayment Date</span>
     <span className='loan-specifics'>31-07-2024</span>
     </div>
 </section>
-<section style={ {display : "flex", flexDirection : "row", justifyContent : "space-between", width : "100%"}}>
+<section style={ {display : "flex", flexDirection : "row", justifyContent : "space-between", width : "100%",}} className='loan-options-container'>
 <div className='loan-options'>
-<span style={{fontSize : "16px"}}>Interest Rate</span>
+<span  className='loan-titles'>Interest Rate</span>
 <span className='loan-specifics'>12.5%</span>
     </div>
     <hr class="styled-line" />
 
     <div  className='loan-options'>
-    <span style={{fontSize : "16px"}}>Loan Repayment</span>
+    <span  className='loan-titles'>Loan Repayment</span>
     <span className='loan-specifics'>N24,000</span>
     </div>
 </section>
