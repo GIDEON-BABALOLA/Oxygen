@@ -100,6 +100,10 @@ body {
   background-color: #000000; /* Sets the color of the line */
   margin: 20px 0; /* Adds space above and below the line */
 }
+.styled-line {
+border: 1px solid #D0D5DD;  
+height: 60px; 
+}
 .startform-inputs{
   margin-top: 30px;
   display: flex;
@@ -151,6 +155,17 @@ cursor: pointer;
   justify-content: space-between;
   gap : 30px
 }
+.loan-options{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+}
+.loan-specifics{
+  font-size: 27px;
+  font-weight: 700;
+}
+
 @media (max-width: 768px) {
   .home-page {
     grid-template-columns: 1fr; /* Stacks the content in one column on smaller screens */
