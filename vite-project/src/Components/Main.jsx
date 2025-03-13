@@ -10,7 +10,6 @@ const Main = () => {
         desktopThree : false,
     })
     const changeContent = () => {
-      console.log(display.desktopOne)
      if(display.desktopOne){
       setDisplay({
         desktopOne : false,
@@ -27,11 +26,27 @@ const Main = () => {
      }
      if(display.desktopThree){
       setDisplay({
-        desktopOne : false,
-        desktoptwo : false,
-        desktopthree : true,
+        desktopOne : true,
+        desktopTwo : false,
+        desktopThree : false,
       })
      }
+    }
+    const backButton = () => {
+      if(display.desktopTwo){
+        setDisplay({
+          desktopOne : true,
+          desktopTwo : false,
+          desktopThree :  false,
+        })
+       }
+       if(display.desktopThree){
+        setDisplay({
+          desktopOne : false,
+          desktopTwo : true,
+          desktopThree : false,
+        })
+       }
     }
   return (
     <div>
@@ -43,6 +58,8 @@ const Main = () => {
 {display.desktopTwo && <GetALoan />}
 {display.desktopThree && <PaymentPlan />}
 <div className='button-container'>
+{display.desktopTwo   && <span className='back-button' style={{color : "#C42222", cursor : "pointer"}} onClick={() => {backButton()}}>Back</span> }
+{display.desktopThree   && <span className='back-button' style={{color : "#C42222", cursor : "pointer"}} onClick={() => {backButton()}}>Back</span> }
 <button className='general-continue-button' onClick={() => { changeContent()}}>
       Continue
     </button>
